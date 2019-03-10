@@ -1,8 +1,13 @@
-export const getQuotes = num => {
-  return fetch(`https://thesimpsonsquoteapi.glitch.me/quotes?count=${num}`)
-    .then(res => res.json())
-    .then(json => ({
-      totalPages: json.info.page,
-      results:json.results
-    }));
+export const getQuotes = () => {
+  return fetch('https://thesimpsonsquoteapi.glitch.me/quotes')
+    .then(res => {
+      return res.json() 
+        .then(res => {
+          return {
+            quote: res[0].quote,
+            characterName: res[0].character,
+            characterImage: res[0].image
+          };
+        });
+    });
 };

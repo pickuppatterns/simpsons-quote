@@ -1,21 +1,23 @@
-import Quotes from '../components/facts/Facts';
+import Quotes from '../components/quotes/Quotes';
 import { connect } from 'react-redux';
-import { getQuotes } from '../selectors/simpsons';
+import { getQuotes, getCharacterName, getCharacterImg } from '../selectors/simpsons';
 import { fetchQuotesWithPromise } from '../actions/simpsons';
-import { withFetch } from '../components/withFetch';
+  
 
 
 const mapStateToProps = state => ({
   quotes: getQuotes(state),
+  name: getCharacterName(state),
+  img: getCharacterImg
   
 });
 
 const mapDispatchToProps = dispatch => ({
   fetch() {
-    dispatch(fetchQuotesWithPromise(10));
+    dispatch(fetchQuotesWithPromise());
   }
 });
-const AllQuotes = withFetch(Quotes);
+const AllQuotes = Quotes;
 
 export default connect(
   mapStateToProps,
