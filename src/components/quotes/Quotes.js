@@ -12,7 +12,7 @@ function Quotes({ quote, characterImage, characterName }) {
 }
 
 Quotes.propTypes = {
-  quote: PropTypes.array,
+  quote: PropTypes.string.isRequired,
   characterImage: PropTypes.string.isRequired,
   characterName: PropTypes.string.isRequired
 };
