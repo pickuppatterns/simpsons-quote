@@ -6,9 +6,9 @@ import { fetchQuotesWithPromise } from '../actions/simpsons';
 
 
 const mapStateToProps = state => ({
-  quotes: getQuotes(state),
-  name: getCharacterName(state),
-  img: getCharacterImg
+  quote: getQuotes(state),
+  characterName: getCharacterName(state),
+  characterImg: getCharacterImg
   
 });
 
