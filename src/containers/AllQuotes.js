@@ -1,7 +1,7 @@
-import Quotes from '../components/quotes/Quotes';
 import { connect } from 'react-redux';
 import { getQuotes, getCharacterName, getCharacterImg } from '../selectors/simpsons';
 import { fetchQuotesWithPromise } from '../actions/simpsons';
+import Quotes from '../components/quotes/Quotes';
   
 
 
@@ -17,10 +17,10 @@ const mapDispatchToProps = dispatch => ({
     dispatch(fetchQuotesWithPromise());
   }
 });
-const AllQuotes = Quotes;
+
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(AllQuotes);
+)(Quotes);
 

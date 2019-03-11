@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 function Quotes({ quote, characterImg, characterName }) {
   return (
-      <>
+    <>
       <h2>{characterName}</h2>
       <p>{quote}</p>
       <img src={characterImg} />
-      </>
+    </>
   );
 }
 
