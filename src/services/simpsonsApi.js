@@ -6,7 +6,7 @@ export const getQuotes = () => {
           return {
             quote: res[0].quote,
             characterName: res[0].character,
-            characterImage: res[0].image
+            characterImg: res[0].image
           };
         });
     });
