@@ -6,7 +6,7 @@ function Quotes({ quote, characterImg, characterName }) {
       <>
       <h2>{characterName}</h2>
       <p>{quote}</p>
-      <img src={characterImg}></img>
+      <img src={characterImg} />
       </>
   );
 }

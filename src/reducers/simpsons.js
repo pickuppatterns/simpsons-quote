@@ -1,9 +1,9 @@
 import { FETCH_QUOTES } from '../actions/simpsons';
 
 const initialState = {
-  quotes: '',
-  character:'',
-  image:' '
+  quote: '',
+  characterName:'',
+  characterImg:' '
   
 };
 
