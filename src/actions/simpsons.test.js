@@ -2,10 +2,6 @@ import { createStore, applyMiddleware } from 'redux';
 import { middleware } from '../middleware';
 import { fetchQuotesWithPromise, FETCH_QUOTES } from './simpsons';
 
-
-
-
-
 jest.mock('../services/simpsonsApi');
 
 describe('simpsons actions test', () => {
