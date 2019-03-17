@@ -31,7 +31,7 @@ const mapStateToProps = state => ({
 
   quote: getQuotes(state),
   characterName: getCharacterName(state),
-  characterImg: getCharacterImg(state)
+  characterImg: getCharacterImg(state)  
   
 });
 
