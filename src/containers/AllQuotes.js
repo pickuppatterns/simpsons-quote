@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { getQuotes, getCharacterName, getCharacterImg } from '../selectors/simpsons';
 import { fetchQuotesWithPromise } from '../actions/simpsons';
 import Quotes from '../components/quotes/Quotes';
+import Load from '../components/quotes/Load';
   
 
 
@@ -23,6 +24,7 @@ class AllQuotes extends PureComponent {
     return (
       <>
         <Quotes {...this.props} />
+        <Load {...this.props}/>
       </>
     );
   }
