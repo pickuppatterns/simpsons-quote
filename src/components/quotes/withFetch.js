@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import PunishmentLoader from '../../asset/Punishment_loader.png';;
+
 
 export const withFetch = Component => {
   class WithFetch extends PureComponent {
@@ -19,7 +19,7 @@ export const withFetch = Component => {
         <>
         <div className='loadingScreen'>
           {isLoading ?
-            <img src="PunishmentLoader"></img> : <Component {...this.props} />}
+            <img src="../../asset/Punishment_loader.png"></img> : <Component {...this.props} />}
         </div>
         </>
       );

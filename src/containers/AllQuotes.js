@@ -46,10 +46,10 @@ const mapDispatchToProps = dispatch => ({
   }
 });
 
-const AllFacts = withFetch(Quotes);
+const AllQuote = withFetch(Quotes);
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(AllQuotes);
+)(AllQuotes, AllQuote);
 
