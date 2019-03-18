@@ -1,10 +1,12 @@
 import { connect } from 'react-redux';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { getQuotes, getCharacterName, getCharacterImg } from '../selectors/simpsons';
+import { getQuotes, getCharacterName, getCharacterImg, isLoading } from '../selectors/simpsons';
 import { fetchQuotesWithPromise } from '../actions/simpsons';
 import Quotes from '../components/quotes/Quotes';
 import Load from '../components/quotes/Load';
+import { withFetch } from '../components/quotes/withFetch';
+
   
 
 
@@ -33,7 +35,8 @@ const mapStateToProps = state => ({
 
   quote: getQuotes(state),
   characterName: getCharacterName(state),
-  characterImg: getCharacterImg(state)  
+  characterImg: getCharacterImg(state),
+  isLoading: isLoading(state)  
   
 });
 
@@ -43,6 +46,7 @@ const mapDispatchToProps = dispatch => ({
   }
 });
 
+const AllFacts = withFetch(Quotes);
 
 export default connect(
   mapStateToProps,
