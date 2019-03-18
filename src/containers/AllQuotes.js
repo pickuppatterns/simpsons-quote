@@ -23,8 +23,8 @@ class AllQuotes extends PureComponent {
   render() {
     return (
       <>
+      <Load {...this.props}/>
         <Quotes {...this.props} />
-        <Load {...this.props}/>
       </>
     );
   }
