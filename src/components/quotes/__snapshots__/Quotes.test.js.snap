@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches a snapshot 1`] = `
+<section
+  className="css-2bwpvc"
+>
+  <h2 />
+  <p />
+  <img />
+</section>
+`;
+
+exports[`Quotes matches a snapshot 1`] = `
+<section
+  className="css-2bwpvc"
+>
+  <h2 />
+  <p />
+  <img />
+</section>
+`;

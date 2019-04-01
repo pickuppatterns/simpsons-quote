@@ -17,7 +17,7 @@ function Quotes({ quote, characterImg, characterName }) {
         <p>{quote}</p>
         <img src={characterImg} />
       </section>
-    </>
+    </> 
   );
 }
 
